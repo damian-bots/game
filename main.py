@@ -12,7 +12,7 @@ if __name__ == '__main__':
 
     application.add_handler(CommandHandler('help', commands.help))
     application.add_handler(CommandHandler('start', commands.register, filters.Regex('-\d+')))
-    application.add_handler(CommandHandler('start', commands.start))
+    application.add_handler(CommandHandler('alive', commands.start))
     application.add_handler(CommandHandler('begin', commands.begin))
     application.add_handler(CommandHandler('stop', commands.stop))
     application.add_handler(CallbackQueryHandler(callbacks.voting_callback, pattern='^-\d+_\d+_maf_\d+_\d+$'))
