@@ -5,16 +5,16 @@ chats = {}
 
 # players
 MAX_PLAYERS = 25
-MIN_PLAYERS = 5
+MIN_PLAYERS = 4
 MIN_PLAYERS_FOR_2_MAFIOSO = 12
 MIN_PLAYERS_FOR_3_MAFIOSO = 18
 
 
 # delays(in seconds)
-registration_duration = 60
-night_voting_duration = 60
-conversation_duration = 60
-day_voting_duration = 20
+registration_duration = 120
+night_voting_duration = 50
+conversation_duration = 40
+day_voting_duration = 30
 
 # bot messages
 greetings = {PlayerRole.MAFIOSO : f'You are *{PlayerRole.MAFIOSO}*\.\n'\
